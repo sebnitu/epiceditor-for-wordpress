@@ -1,0 +1,99 @@
+/* ==========================================================
+ * EpicEditor CSS for the post.php, post-new.php page
+ * https://github.com/sebnitu/BaseWeb
+ * ==========================================================
+ * Copyright 2012 Sebastian Nitu.
+ * ========================================================== */
+
+/**
+ * General
+ */
+.markdown-active .switch-markdown {
+	border-color: #ccc #ccc #e9e9e9;
+	background-color: #e9e9e9;
+	color: #333;
+}
+.markdown-active #ed_toolbar {
+	display: none;
+}
+#content {
+	display: block;
+}
+
+/**
+ * EpicEditor
+ */
+#epiceditor_wrap {
+	position: relative;
+	height: 380px;
+}
+#epiceditor_box {
+	position: relative;
+	z-index: 2;
+	height: 380px;
+}
+#epiceditor_resizable {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 20px;
+}
+#epiceditor_resizable_mask {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+/* Resizable Handle */
+#epiceditor_resizable .ui-resizable-handle {
+	background: url("../img/resize.png") no-repeat right bottom;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: auto;
+	top: auto;
+	width: 18px; 
+	height: 18px;
+	padding: 0;
+	margin: 0 2px 1px 0;
+	cursor: se-resize;
+}
+
+/**
+ * Toolbar
+ */
+#markdown_toolbar {
+	display: none;
+	position: relative;
+}
+.markdown-active #markdown_toolbar {
+	display: block;
+}
+#markdown_toolbar .markdown_button {
+	float: left;
+}
+#markdown_toolbar .markdown_button:hover, #markdown_toolbar .markdown_button.active {
+	border-color: #aaa;
+	background: #ddd;
+}
+
+#markdown_toolbar .tools_sep {
+	float: left;
+	height: 31px;
+	width: 0;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #efefef;
+	margin: -2px 8px 0;
+	padding: 0;
+}
+
+/* ==========================================================
+	End of EpicEditor CSS
+============================================================= */
